@@ -47,7 +47,7 @@ def tandem(arr1, aar2):
         blue_val = blue[i]
         max_val = max(red_val,blue_val)
         red[i] = max_val
-    print(sum(red))
+    return sum(red)
 
 
 
