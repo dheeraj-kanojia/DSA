@@ -32,3 +32,23 @@ def class_photo(arr1, arr2, backrow_color):
             if blue <= red_val:
                 return False
     return True
+
+
+################# Tandem Bicycle #################
+
+
+def tandem(arr1, aar2):
+
+    red = sorted(arr1)
+    blue = sorted(aar2, reverse= True)
+
+    for i in range(0, len(red)):
+        red_val = red[i]
+        blue_val = blue[i]
+        max_val = max(red_val,blue_val)
+        red[i] = max_val
+    print(sum(red))
+
+
+
+tandem([5, 5, 3, 9, 2],[3, 6, 7, 2, 1])
